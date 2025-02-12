@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Precleaner Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        form { display: inline-block; text-align: left; padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
+        input, label { display: block; margin: 10px 0; }
+        button { margin-top: 10px; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Precleaner Calculator</h1>
+    <form action="/calculate" method="get">
+        <label>RPM:</label>
+        <input type="number" name="rpm" required>
+        
+        <label>Displacement (L):</label>
+        <input type="number" step="0.01" name="displacement" required>
+        
+        <label>Turbocharged:</label>
+        <input type="checkbox" name="turbocharged" value="true">
+        
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>
